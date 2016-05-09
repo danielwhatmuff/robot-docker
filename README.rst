@@ -10,7 +10,6 @@ Overview
 Information on the Robot Framework can be found here:
 
 `Robot Framework <http://robotframework.org>`_
-.. _GitHub: https://github.com/robotframework/robotframework
 
 Run Robot inside Docker
 ------------
