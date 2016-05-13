@@ -1,5 +1,5 @@
 #!/bin/bash
-# Entry script to start Xvnc and set display
+# Entry script to start Xvfb and set display
 set -e
 
 # Set the defaults
