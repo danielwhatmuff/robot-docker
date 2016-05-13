@@ -19,8 +19,8 @@ if [[ "${ROBOT_TESTS}" == "false" ]]; then
   exit 1
 fi
 
-# Start Xvnc
-echo -e "Starting Xvnc on display ${DISPLAY} with res ${RES}"
+# Start Xvfb
+echo -e "Starting Xvfb on display ${DISPLAY} with res ${RES}"
 Xvfb ${DISPLAY} -ac -screen 0 ${RES} +extension RANDR &
 export DISPLAY=${DISPLAY}
 
