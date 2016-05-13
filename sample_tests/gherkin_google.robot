@@ -7,8 +7,8 @@ Resource          resource.robot
 Test Teardown     Close Browser
 
 *** Test Cases ***
-Valid Login
-    Given browser is opened to google
+Open Google
+Given browser is opened to google
     Then google should be open
 
 *** Keywords ***
