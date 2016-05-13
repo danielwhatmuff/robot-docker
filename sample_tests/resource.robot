@@ -10,7 +10,7 @@ Library           Selenium2Library
 ${SERVER}         google.com
 ${BROWSER}        Firefox
 ${DELAY}          0
-${LOGIN URL}      http://${SERVER}/
+${LOGIN URL}      https://${SERVER}/
 
 *** Keywords ***
 Open Browser To Google 
