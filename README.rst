@@ -20,7 +20,18 @@ To build a Robot Docker image::
 
 To run tests, mount a directory and pass the ROBOT_TESTS env var::
 
-    docker run --rm -e ROBOT_TESTS=/path/to/tests/ -v /path/to/tests/:/path/to/tests/ -ti robot-docker
+    docker run --rm \ 
+               -e ROBOT_TESTS=/path/to/tests/ \
+               -v /path/to/tests/:/path/to/tests/ \
+               -ti \
+               robot-docker
+
+Example of running the sample tests::
+
+    docker run --rm \
+               -e ROBOT_TESTS=/sample_tests/ \
+               -v $(pwd)/sample_tests:/sample_tests \
+               -ti robot-docker
 
 Use the Docker Hub automated build::
 

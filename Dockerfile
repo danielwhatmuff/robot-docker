@@ -5,7 +5,7 @@ MAINTAINER "Daniel Whatmuff" <danielwhatmuff@gmail.com>
 LABEL name="Docker image for the Robot Framework http://robotframework.org/"
 LABEL usage="docker run --rm -v $(pwd)/path/to/tests/:/path/to/tests/ -ti robot-docker pybot -e ROBOT_TESTS /path/to/tests/"
 
-#Install Python Pip and the Robot framework
+# Install Python Pip and the Robot framework
 RUN apk-install bash py-pip firefox xvfb dbus && \
     pip install --upgrade pip && \
     pip install robotframework robotframework-selenium2library selenium robotframework-xvfb && \
