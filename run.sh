@@ -28,3 +28,6 @@ export DISPLAY=${DISPLAY}
 echo -e "Executing robot tests at log level ${LOG_LEVEL}"
 
 pybot --loglevel ${LOG_LEVEL} ${ROBOT_TESTS}
+
+# Stop Xvfb
+kill -9 $(pgrep Xvfb)
